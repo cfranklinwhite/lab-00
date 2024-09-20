@@ -72,3 +72,13 @@ p2
 There is so many different hobbies that the data would uninformative because many people have specific hobbies. This would make it hard to interpret and difficult to draw conclusions. 
 
 To improve the visualisation you could group similar hobbies and restrict the choice of indviduals, e.g. 'Sports', 'Music', 'Games'.
+
+
+```{r new-pie-plot}
+
+ggplot(team_data, aes(x="", y=1, fill=hobby)) + geom_bar(stat="identity", width=1) + coord_polar("y", start=0)
+
+
+```
+
+
